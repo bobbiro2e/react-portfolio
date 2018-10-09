@@ -6,7 +6,6 @@ import Work from "./components/pages/Work/Work";
 import Four from "./components/pages/FourOhFour/FourOhFour";
 
 
-
 class App extends Component {
   render() {
     return (
@@ -14,6 +13,7 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/home" component={Home} />
             <Route exact path="/bio" component={Bio} />
             <Route exact path="/work" component={Work} />
             <Route component={Four} />
